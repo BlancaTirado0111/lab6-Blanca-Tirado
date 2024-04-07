@@ -1,83 +1,137 @@
-.container-1 {
+/*.parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 330px;
+}
+
+.container-1,
+.container-2,
+.container-3,
+.container-4,
+.container-5,
+.container-6,
+.container-7,
+.container-8,
+.container-9 {
   width: 100px;
   height: 100px;
-  background-color: red;
+  margin: 5px;
   color: white;
   text-align: center;
-  order: 9;
+}
+
+.container-1 {
+  background-color: red;
+  order: 1;
 }
 
 .container-2 {
-  width: 100px;
-  height: 100px;
   background-color: blue;
-  color: white;
-  text-align: center;
   order: 2;
 }
 
 .container-3 {
-  width: 100px;
-  height: 100px;
   background-color: red;
-  color: white;
-  text-align: center;
-  order: 2;
+  order: 3;
 }
 
 .container-4 {
-  width: 100px;
-  height: 100px;
   background-color: black;
-  color: white;
-  text-align: center;
-  order: 2;
+  order: 4;
 }
 
 .container-5 {
-  width: 100px;
-  height: 100px;
   background-color: orange;
-  color: white;
-  text-align: center;
-  order: -1;
+  order: 5;
 }
 
 .container-6 {
-  width: 100px;
-  height: 100px;
   background-color: brown;
-  color: white;
-  text-align: center;
-  order: 2;
+  order: 6;
 }
 
 .container-7 {
-  width: 100px;
-  height: 100px;
   background-color: green;
-  color: white;
-  text-align: center;
-  order: 2;
+  order: 7;
 }
 
 .container-8 {
-  width: 100px;
-  height: 100px;
   background-color: aqua;
-  color: white;
-  text-align: center;
-  order: 2;
+  order: 8;
 }
 
 .container-9 {
-  width: 100px;
-  height: 100px;
   background-color: aquamarine;
-  color: white;
-  text-align: center;
-  order: 1;
-}
+  order: 9;
+}*/
+
+/*ej 2*/
 
 .parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 330px;
+}
+
+.container-1,
+.container-2,
+.container-3,
+.container-4,
+.container-5,
+.container-6,
+.container-7,
+.container-8,
+.container-9 {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  color: white;
+  text-align: center;
+}
+
+.container-1 {
+  background-color: red;
+  order: 9; 
+}
+
+.container-2 {
+  background-color: blue;
+  order: 3; 
+}
+
+.container-3 {
+  background-color: red;
+  order: 4; 
+}
+
+.container-4 {
+  background-color: black;
+  order: 6; 
+}
+
+.container-5 {
+  background-color: orange;
+  order: 1; 
+}
+
+.container-6 {
+  background-color: brown;
+  order: 7; 
+}
+
+.container-7 {
+  background-color: green;
+  order: 8; 
+}
+
+.container-8 {
+  background-color: aqua;
+  order: 5; 
+}
+
+.container-9 {
+  background-color: aquamarine;
+  order: 2; 
 }

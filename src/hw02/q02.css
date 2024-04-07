@@ -1,74 +1,266 @@
-.container-1 {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  color: white;
-  text-align: center;
+ /*
+ 1
+ 
+ .parent {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(5, 100px);
+  grid-template-areas: 
+    "container-1 container-1 container-1"
+    "container-9 container-9 container-9"
+    "container-7 container-7 container-7"
+    "container-2 container-3 container-4"
+    "container-5 container-6 container-8";
 }
 
-.container-2 {
-  width: 100px;
-  height: 100px;
-  background-color: blue;
-  color: white;
-  text-align: center;
-}
-
-.container-3 {
-  width: 100px;
-  height: 100px;
-  background-color: lightgreen;
-  color: white;
-  text-align: center;
-}
-
-.container-4 {
-  width: 100px;
-  height: 100px;
-  background-color: black;
-  color: white;
-  text-align: center;
-}
-
-.container-5 {
-  width: 100px;
-  height: 100px;
-  background-color: orange;
-  color: white;
-  text-align: center;
-}
-
-.container-6 {
-  width: 100px;
-  height: 100px;
-  background-color: brown;
-  color: white;
-  text-align: center;
-}
-
-.container-7 {
-  width: 100px;
-  height: 100px;
-  background-color: green;
-  color: white;
-  text-align: center;
-}
-
-.container-8 {
-  width: 100px;
-  height: 100px;
-  background-color: aqua;
-  color: white;
-  text-align: center;
-}
-
+.container-1, 
+.container-2, 
+.container-3,
+.container-4,
+.container-5, 
+.container-6, 
+.container-7, 
+.container-8,
 .container-9 {
-  width: 100px;
-  height: 100px;
-  background-color: aquamarine;
   color: white;
   text-align: center;
 }
 
+.container-1 { 
+  background-color: red; 
+  grid-area: container-1;
+}
+
+.container-2 { 
+  background-color: blue; 
+  grid-area: container-2;
+}
+
+.container-3 { 
+  background-color: lightgreen; 
+  grid-area: container-3;
+}
+
+.container-4 { 
+  background-color: black; 
+  grid-area: container-4;
+}
+
+.container-5 { 
+  background-color: darkblue; 
+  grid-area: container-5;
+}
+
+.container-6 { 
+  background-color: brown; 
+  grid-area: container-6;
+}
+
+.container-7 { 
+  background-color: green; 
+  grid-area: container-7;
+}
+
+.container-8 { 
+  background-color: cyan; 
+  grid-area: container-8;
+}
+
+.container-9 { 
+  background-color: aquamarine;
+  grid-area: container-9;
+}*/
+
+/*
+2
 .parent {
-}  
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(5, 100px);
+  grid-template-areas: 
+    "container-1 container-1 container-1"
+    "container-2 container-3 ."
+    ". . container-4"
+    "container-7 container-8 ."
+    ". container-5 container-6 container-9";
+}
+
+.container-1 { background-color: red; }
+.container-2 { background-color: blue; }
+.container-3 { background-color: red; }
+.container-4 { background-color: black; }
+.container-5 { background-color: orange; }
+.container-6 { background-color: brown; }
+.container-7 { background-color: green; }
+.container-8 { background-color: aqua; }
+.container-9 { background-color: aquamarine;}
+
+
+[class^="container"] {
+  width: 100px;
+  height: 100px;
+  color: white;
+  text-align: center;
+}*/
+/*
+3
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  grid-gap: 10px;
+}
+
+.child {
+  background-color: #ff0000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.child:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.child:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.child:nth-child(3) {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.child:nth-child(4) {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.child:nth-child(5) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.child:nth-child(6) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.child:nth-child(7) {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.child:nth-child(8) {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.child:nth-child(9) {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.child:nth-child(10) {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.child:nth-child(11) {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.child:nth-child(12) {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+.child:nth-child(13) {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.child:nth-child(14) {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.child:nth-child(15) {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+.child:nth-child(16) {
+  grid-column: 4;
+  grid-row: 4;
+}
+
+*/
+
+/*4*/
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+  grid-template-rows: repeat(4, 100px);
+  grid-template-areas: 
+    "container-1 container-1 container-1 container-1 container-1"
+    "container-2 container-2 container-3 container-4 container-4"
+    "container-2 container-2 container-3 container-5 container-6"
+    "container-7 container-8 container-9 container-9 container-9";
+}
+
+[class^="container"] {
+  color: white;
+  text-align: center;
+}
+
+.container-1 { 
+  background-color: red; 
+  grid-area: container-1;
+}
+
+.container-2 { 
+  background-color: blue; 
+  grid-area: container-2;
+}
+
+.container-3 { 
+  background-color: lightgreen; 
+  grid-area: container-3;
+}
+
+.container-4 { 
+  background-color: black; 
+  grid-area: container-4;
+}
+
+.container-5 { 
+  background-color: orange; 
+  grid-area: container-5;
+}
+
+.container-6 { 
+  background-color: brown; 
+  grid-area: container-6;
+}
+
+.container-7 { 
+  background-color: green; 
+  grid-area: container-7;
+}
+
+.container-8 { 
+  background-color: cyan; 
+  grid-area: container-8;
+}
+
+.container-9 { 
+  background-color: aquamarine;
+  grid-area: container-9;
+}

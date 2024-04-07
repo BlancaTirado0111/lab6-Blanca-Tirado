@@ -9,4 +9,4 @@ document.querySelector('#app').innerHTML = `
   </div>
 `
 
-setupCounter(document.querySelector('#counter'));
+setupCounter(document.querySelector('href', 'https://keybr.com'));
